@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shipment details, route map, delivery progress, and tracking updates for Ships.">
+  <title>Shipment SH-2048-AL — Ships</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="shipment-detail.css">
+</head>
+<body class="shipment-body">
+  <header class="site-header shipment-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="index.html"><span class="brand-mark"><i class="fa-solid fa-location-arrow"></i></span>ships<span class="brand-dot">.</span></a>
+      <div class="shipment-nav-actions">
+        <a class="text-link" href="dashboard.html"><i class="fa-solid fa-arrow-left"></i> Dashboard</a>
+        <button class="theme-toggle" type="button" aria-label="Switch theme"><i class="fa-solid fa-moon"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="shipment-main">
+    <div class="container">
+      <div class="shipment-breadcrumb"><a href="dashboard.html">Overview</a><i class="fa-solid fa-chevron-right"></i><span>Shipment details</span></div>
+
+      <section class="shipment-title-row">
+        <div>
+          <p class="eyebrow"><span></span> Shipment intelligence</p>
+          <h1>Shipment <em>SH-2048-AL</em></h1>
+          <p class="shipment-subtitle">Last updated 12 minutes ago · Estimated delivery <strong>Tomorrow, Jun 18</strong></p>
+        </div>
+        <div class="shipment-actions">
+          <button class="ghost-button" id="share-shipment" type="button"><i class="fa-solid fa-share-nodes"></i> Share</button>
+          <button class="button" id="print-shipment" type="button"><i class="fa-solid fa-download"></i> Export details</button>
+        </div>
+      </section>
+
+      <section class="shipment-status-card" aria-label="Current shipment status">
+        <div class="status-summary">
+          <span class="status-icon"><i class="fa-solid fa-truck-fast"></i></span>
+          <div><span class="status-label">Current status</span><h2>In transit</h2><p>Arrived at Chicago regional hub</p></div>
+        </div>
+        <div class="delivery-progress"><div class="progress-meta"><span>Delivery progress</span><strong>67%</strong></div><div class="progress-track"><span style="width:67%"></span></div><div class="progress-dates"><span>Picked up · Jun 15</span><span>Out for delivery · Jun 18</span></div></div>
+        <div class="eta-block"><span>Expected by</span><strong>Jun 18</strong><small>Before 8:00 PM</small></div>
+      </section>
+
+      <div class="shipment-content-grid">
+        <section class="map-panel panel" aria-labelledby="route-title">
+          <div class="panel-header"><div><small>Live route</small><h2 id="route-title">New York → Chicago</h2></div><span class="live-badge"><i></i> Live</span></div>
+          <div class="route-map">
+            <div class="map-grid-lines" aria-hidden="true"></div>
+            <svg viewBox="0 0 720 390" role="img" aria-label="Map showing the shipment route from New York to Chicago">
+              <path class="map-coast" d="M82 48c74 18 103 8 160 50s93 35 133 83 97 39 146 83 100 38 126 80" />
+              <path class="route-shadow" d="M126 292 C235 188 335 226 432 174 S557 128 625 88" />
+              <path class="route-line-active" d="M126 292 C235 188 335 226 432 174 S557 128 625 88" />
+              <circle class="map-stop origin" cx="126" cy="292" r="13" />
+              <circle class="map-stop destination" cx="625" cy="88" r="13" />
+              <circle class="map-stop current" cx="432" cy="174" r="11" />
+              <g class="map-label origin-label"><rect x="86" y="316" width="104" height="34" rx="17"/><text x="138" y="338">New York</text></g>
+              <g class="map-label destination-label"><rect x="570" y="38" width="110" height="34" rx="17"/><text x="625" y="60">Chicago</text></g>
+              <g class="map-label current-label"><rect x="372" y="122" width="126" height="34" rx="17"/><text x="435" y="144">In transit</text></g>
+            </svg>
+            <div class="map-controls" aria-label="Map controls"><button type="button" aria-label="Zoom in">+</button><button type="button" aria-label="Zoom out">−</button></div>
+          </div>
+          <div class="route-facts"><div><i class="fa-solid fa-road"></i><span><small>Distance remaining</small><strong>482 mi</strong></span></div><div><i class="fa-solid fa-clock"></i><span><small>Time in transit</small><strong>2d 6h</strong></span></div><div><i class="fa-solid fa-temperature-half"></i><span><small>Conditions</small><strong>On schedule</strong></span></div></div>
+        </section>
+
+        <aside class="shipment-sidebar">
+          <section class="panel shipment-card"><div class="panel-header"><div><small>Package</small><h2>Shipment details</h2></div><i class="fa-solid fa-box-open panel-icon"></i></div><dl class="details-list"><div><dt>Tracking number</dt><dd>SH-2048-AL</dd></div><div><dt>Service</dt><dd>Ships Standard</dd></div><div><dt>Package type</dt><dd>Medium box</dd></div><div><dt>Weight</dt><dd>4.8 lb</dd></div><div><dt>Reference</dt><dd>ORD-78214</dd></div></dl></section>
+          <section class="panel address-card"><div class="address-block"><span class="address-pin origin-pin"><i class="fa-solid fa-circle"></i></span><div><small>From</small><strong>Northstar Studio</strong><p>120 Broadway, New York, NY</p></div></div><div class="address-divider"></div><div class="address-block"><span class="address-pin destination-pin"><i class="fa-solid fa-house"></i></span><div><small>Delivering to</small><strong>Alex Morgan</strong><p>840 W Fulton Market, Chicago, IL</p></div></div></section>
+        </aside>
+      </div>
+
+      <section class="updates-section" aria-labelledby="updates-title"><div class="updates-heading"><div><p class="eyebrow"><span></span> Shipment history</p><h2 id="updates-title">Latest updates</h2></div><button class="ghost-button" id="toggle-updates" type="button">Show all updates</button></div><div class="updates-list" id="updates-list"><article class="update-item latest"><span class="update-marker"><i class="fa-solid fa-truck-fast"></i></span><div class="update-content"><div><h3>Arrived at regional hub</h3><span class="update-status">In transit</span></div><p>Package processed at the Chicago regional distribution center.</p><time datetime="2024-06-17T14:42">Today, 2:42 PM</time></div></article><article class="update-item"><span class="update-marker"><i class="fa-solid fa-box"></i></span><div class="update-content"><div><h3>Departed transit facility</h3><span class="update-status">In transit</span></div><p>Shipment departed the Columbus sorting facility.</p><time datetime="2024-06-17T05:18">Today, 5:18 AM</time></div></article><article class="update-item"><span class="update-marker"><i class="fa-solid fa-warehouse"></i></span><div class="update-content"><div><h3>Arrived at transit facility</h3><span class="update-status">In transit</span></div><p>Package received and scanned at the Columbus sorting facility.</p><time datetime="2024-06-16T20:07">Yesterday, 8:07 PM</time></div></article><article class="update-item extra-update"><span class="update-marker"><i class="fa-solid fa-route"></i></span><div class="update-content"><div><h3>Shipment picked up</h3><span class="update-status">Complete</span></div><p>Carrier picked up the package from Northstar Studio.</p><time datetime="2024-06-15T08:42">Jun 15, 8:42 AM</time></div></article></div></section>
+    </div>
+  </main>
+  <script src="script.js"></script><script src="shipment-detail.js"></script>
+</body>
+</html>
