@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Login to Ships to manage shipments and deliveries.">
+  <title>Log in — Ships</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-body">
+  <div class="auth-shell">
+    <aside class="auth-visual">
+      <div class="auth-panel">
+        <span class="eyebrow"><span></span> Ships</span>
+        <h1>Clear visibility for every shipment.</h1>
+        <p>Track, manage, and deliver with confidence across every route and customer touchpoint.</p>
+        <div class="mini-metrics">
+          <div><strong>98.7%</strong><span>On-time</span></div>
+          <div><strong>12k+</strong><span>Active users</span></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="auth-form-wrap">
+      <a class="brand" href="index.html"><span class="brand-mark"><i class="fa-solid fa-location-arrow"></i></span>ships<span class="brand-dot">.</span></a>
+
+      <div class="auth-card">
+        <div class="auth-header">
+          <h2>Welcome back</h2>
+          <p>Sign in to your workspace</p>
+        </div>
+
+        <form id="login-form" novalidate>
+          <div class="field">
+            <label for="login-email">Work email</label>
+            <input id="login-email" type="email" required autocomplete="email">
+            <small class="error" data-error-for="login-email"></small>
+          </div>
+
+          <div class="field">
+            <label for="login-password">Password</label>
+            <input id="login-password" type="password" required minlength="8" autocomplete="current-password">
+            <small class="error" data-error-for="login-password"></small>
+          </div>
+
+          <div class="auth-row">
+            <label class="checkbox-wrap"><input type="checkbox"> <span>Remember me</span></label>
+            <a href="#">Forgot password?</a>
+          </div>
+
+          <button class="button full" type="submit">Log in <i class="fa-solid fa-arrow-right"></i></button>
+          <p class="form-message" id="login-result" role="status" aria-live="polite"></p>
+        </form>
+
+        <p class="switch-copy">Need an account? <a href="signup.html">Create one</a></p>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('login-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const form = event.currentTarget;
+      const result = document.getElementById('login-result');
+      if (!validateForm(form)) {
+        result.textContent = 'Please fix the highlighted fields.';
+        return;
+      }
+      result.textContent = 'Login successful. Redirecting to dashboard...';
+      setTimeout(() => { window.location.href = 'dashboard.html'; }, 900);
+    });
+  </script>
+</body>
+</html>

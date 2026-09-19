@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ships dashboard for shipment management and performance insights.">
+  <title>Dashboard — Ships</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="app-body">
+  <div class="dashboard-shell">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <a class="brand" href="index.html"><span class="brand-mark"><i class="fa-solid fa-location-arrow"></i></span>ships<span class="brand-dot">.</span></a>
+      </div>
+
+      <nav class="side-nav" aria-label="Dashboard navigation">
+        <a class="active" href="dashboard.html"><i class="fa-solid fa-grid-2"></i> Overview</a>
+        <a href="track.html"><i class="fa-solid fa-box"></i> Shipments</a>
+        <a href="track.html"><i class="fa-solid fa-location-dot"></i> Tracking</a>
+        <a href="contact.html"><i class="fa-solid fa-headset"></i> Support</a>
+      </nav>
+
+      <div class="sidebar-card">
+        <small>Operations score</small>
+        <strong>92%</strong>
+        <span>On-time performance</span>
+      </div>
+    </aside>
+
+    <main class="dashboard-main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow"><span></span> Operations dashboard</p>
+          <h1>Welcome back, Maya</h1>
+        </div>
+        <div class="topbar-actions">
+          <button class="ghost-button" type="button"><i class="fa-solid fa-sliders"></i> Filters</button>
+          <a class="button" href="track.html">Track a shipment <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </header>
+
+      <section class="summary-grid">
+        <article class="summary-card accent">
+          <div>
+            <small>Active shipments</small>
+            <strong>1,284</strong>
+          </div>
+          <span class="trend up"><i class="fa-solid fa-arrow-trend-up"></i> +18.4%</span>
+        </article>
+
+        <article class="summary-card">
+          <div>
+            <small>On-time delivery</small>
+            <strong>98.7%</strong>
+          </div>
+          <span class="trend up"><i class="fa-solid fa-arrow-trend-up"></i> +4.1%</span>
+        </article>
+
+        <article class="summary-card">
+          <div>
+            <small>Exceptions</small>
+            <strong>31</strong>
+          </div>
+          <span class="trend down"><i class="fa-solid fa-arrow-trend-down"></i> -7.2%</span>
+        </article>
+
+        <article class="summary-card">
+          <div>
+            <small>Revenue</small>
+            <strong>$84.2k</strong>
+          </div>
+          <span class="trend up"><i class="fa-solid fa-arrow-trend-up"></i> +12.8%</span>
+        </article>
+      </section>
+
+      <section class="panel-grid">
+        <article class="panel chart-panel">
+          <div class="panel-header">
+            <div>
+              <small>Performance</small>
+              <h2>Monthly shipments</h2>
+            </div>
+            <button class="ghost-button subtle" type="button">This year</button>
+          </div>
+
+          <div class="chart-bars" aria-label="Monthly shipment chart">
+            <div class="bar-group"><span style="height:35%"></span><label>Jan</label></div>
+            <div class="bar-group"><span style="height:48%"></span><label>Feb</label></div>
+            <div class="bar-group"><span style="height:42%"></span><label>Mar</label></div>
+            <div class="bar-group"><span style="height:68%"></span><label>Apr</label></div>
+            <div class="bar-group"><span style="height:72%"></span><label>May</label></div>
+            <div class="bar-group"><span style="height:82%"></span><label>Jun</label></div>
+            <div class="bar-group"><span style="height:76%"></span><label>Jul</label></div>
+            <div class="bar-group"><span style="height:90%"></span><label>Aug</label></div>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-header">
+            <div>
+              <small>Milestones</small>
+              <h2>Live route map</h2>
+            </div>
+          </div>
+
+          <div class="map-card">
+            <svg viewBox="0 0 320 170" aria-label="Route map">
+              <path d="M40 128C82 102 91 60 137 72s52 35 101 10 39-56 50-65" />
+              <circle cx="40" cy="128" r="8" />
+              <circle cx="288" cy="26" r="8" />
+              <circle cx="151" cy="90" r="6" />
+            </svg>
+            <div class="map-legend">
+              <span><i class="fa-solid fa-circle" style="color:#b8ed6f"></i> In transit</span>
+              <span><i class="fa-solid fa-circle" style="color:#7ec4ff"></i> Customs</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="bottom-grid">
+        <article class="panel shipments-panel">
+          <div class="panel-header">
+            <div>
+              <small>Latest</small>
+              <h2>Shipment cards</h2>
+            </div>
+            <a href="track.html" class="link-inline">View all</a>
+          </div>
+
+          <div class="shipment-list">
+            <div class="shipment-item">
+              <div class="shipment-meta">
+                <span class="shipment-id">#12578</span>
+                <span class="status in-transit">In transit</span>
+              </div>
+              <div class="shipment-summary">
+                <strong>New York to Chicago</strong>
+                <small>ETA · 2 days</small>
+              </div>
+            </div>
+
+            <div class="shipment-item">
+              <div class="shipment-meta">
+                <span class="shipment-id">#22849</span>
+                <span class="status delivered">Delivered</span>
+              </div>
+              <div class="shipment-summary">
+                <strong>Seattle to Denver</strong>
+                <small>ETA · Today</small>
+              </div>
+            </div>
+
+            <div class="shipment-item">
+              <div class="shipment-meta">
+                <span class="shipment-id">#34221</span>
+                <span class="status pending">Out for delivery</span>
+              </div>
+              <div class="shipment-summary">
+                <strong>Miami to Austin</strong>
+                <small>ETA · Tomorrow</small>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel activity-panel">
+          <div class="panel-header">
+            <div>
+              <small>Recent</small>
+              <h2>Activity</h2>
+            </div>
+          </div>
+
+          <ul class="activity-list">
+            <li>
+              <i class="fa-solid fa-circle-dot"></i>
+              <div>
+                <strong>Shipment #12578 moved to hub in Chicago</strong>
+                <small>12 mins ago</small>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-dot"></i>
+              <div>
+                <strong>Delivery exception resolved for #22849</strong>
+                <small>1 hour ago</small>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-dot"></i>
+              <div>
+                <strong>Customer notification sent for #34221</strong>
+                <small>2 hours ago</small>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

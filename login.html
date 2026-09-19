@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Create a Ships account for shipment management and tracking.">
+  <title>Create account — Ships</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-body">
+  <div class="auth-shell">
+    <aside class="auth-visual">
+      <div class="auth-panel">
+        <span class="eyebrow"><span></span> Start shipping smarter</span>
+        <h1>Build visibility across every delivery.</h1>
+        <p>Set up a workspace for your team and keep shipments moving without the noise.</p>
+        <div class="mini-metrics">
+          <div><strong>3 min</strong><span>Setup time</span></div>
+          <div><strong>24/7</strong><span>Insights</span></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="auth-form-wrap">
+      <a class="brand" href="index.html"><span class="brand-mark"><i class="fa-solid fa-location-arrow"></i></span>ships<span class="brand-dot">.</span></a>
+
+      <div class="auth-card">
+        <div class="auth-header">
+          <h2>Create your account</h2>
+          <p>Start optimizing delivery operations</p>
+        </div>
+
+        <form id="signup-form" novalidate>
+          <div class="field">
+            <label for="signup-name">Full name</label>
+            <input id="signup-name" required minlength="2" autocomplete="name">
+            <small class="error" data-error-for="signup-name"></small>
+          </div>
+
+          <div class="field">
+            <label for="signup-email">Work email</label>
+            <input id="signup-email" type="email" required autocomplete="email">
+            <small class="error" data-error-for="signup-email"></small>
+          </div>
+
+          <div class="field">
+            <label for="signup-company">Company</label>
+            <input id="signup-company" required>
+            <small class="error" data-error-for="signup-company"></small>
+          </div>
+
+          <div class="field">
+            <label for="signup-password">Password</label>
+            <input id="signup-password" type="password" required minlength="8" autocomplete="new-password">
+            <small class="error" data-error-for="signup-password"></small>
+          </div>
+
+          <button class="button full" type="submit">Create account <i class="fa-solid fa-arrow-right"></i></button>
+          <p class="form-message" id="signup-result" role="status" aria-live="polite"></p>
+        </form>
+
+        <p class="switch-copy">Already have an account? <a href="login.html">Log in</a></p>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('signup-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const form = event.currentTarget;
+      const result = document.getElementById('signup-result');
+      if (!validateForm(form)) {
+        result.textContent = 'Please fix the highlighted fields.';
+        return;
+      }
+      result.textContent = 'Account created successfully. Redirecting to dashboard...';
+      setTimeout(() => { window.location.href = 'dashboard.html'; }, 900);
+    });
+  </script>
+</body>
+</html>
