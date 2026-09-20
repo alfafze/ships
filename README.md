@@ -1,95 +1,100 @@
-# Ships
+# GoMobileUX
 
-Ships is a mobile-first package tracking and sending platform built to help users monitor deliveries, schedule pickups, and manage shipment activity with a smooth, easy-to-use experience on the go.
+GoMobileUX is a creative-commerce interface for managing an eShop from a clear, mobile-first workspace. The experience brings storefront pages, products, orders, customers, finance, integrations, and account tools together in one streamlined dashboard.
 
 ## Overview
 
-Whether you're sending a parcel to a customer, tracking a delivery for your business, or managing multiple shipments at once, Ships gives you a clear and fast way to stay updated from dispatch to delivery.
+The eShop workspace is designed to make commerce operations easy to discover and manage. A dedicated **Pages** view provides quick access to the platform's customer-facing and operational screens, including shopping, checkout, product management, order workflows, billing, customer accounts, and support pages.
 
-The platform is designed with a strong mobile-first UX, making it simple to:
+The interface focuses on:
 
-- Track active deliveries in real time
-- View shipment status updates at a glance
-- Send packages quickly and efficiently
-- Manage courier and delivery activity from mobile devices
-- Improve visibility for customers and logistics teams
+- Fast navigation across the commerce experience
+- Clear separation of storefront and back-office workflows
+- Responsive layouts suitable for mobile and tablet use
+- Consistent, friendly visual design
+- Easy access to frequently used pages and tools
 
-## Why Ships
+## Main Areas
 
-Shipping should be simple and transparent. Ships focuses on clarity, speed, and convenience for mobile users who need quick access to delivery information without clutter or confusion.
+### Storefront and Shopping
 
-Built specifically for mobile UX, the experience is optimized for:
+- Shop and product discovery
+- Product details
+- Cart and checkout
+- Wishlist
+- Customer account and profile pages
 
-- Small screens
-- Touch-first interactions
-- Quick status checks
-- Fast order management
-- Clean, readable interfaces
+### Products and Orders
 
-## Core Features
+- Product listing and product details
+- Product creation and editing
+- Order creation and completion
+- Order details
+- Shipment and fulfillment workflows
 
-### Package Tracking
-- Track packages by ID, order number, or shipment reference
-- See current status from pickup to delivery
-- Monitor delivery progress and last known location
+### Customers
 
-### Sending and Dispatch
-- Create and manage outgoing shipments
-- Capture sender and receiver details
-- Schedule package handoff or pickup requests
+- Customer directory
+- Customer details
+- Customer editing
+- Login and sign-up flows
+- Password recovery and account settings
 
-### Mobile-Friendly Dashboard
-- Clear overview of active shipments and recent activity
-- Fast access to essentials without complicated navigation
-- Responsive layout designed for phones and tablets
+### Finance and Billing
 
-### Delivery Status Updates
-- Keep customers informed with progress updates
-- Highlight delays, successful delivery, and pending actions
-- Reduce customer check-ins and support requests
+- Finance dashboard
+- Billing
+- Discounts
+- Invoices
+- Invoice details
+- Subscription payment and upgrade flows
 
-### User Experience
-- Simple navigation and clean design
-- Minimal friction for frequent use
-- Friendly, modern interface for both customers and staff
+### Workspace and Support
 
-## Ideal Use Cases
+- Dashboard
+- Integrations
+- Settings
+- Calendar
+- Inbox and chat
+- Help center
+- Contact us
+- Privacy policy and terms of use
 
-Ships is designed for businesses and teams that need efficient package movement, such as:
+## Pages Workspace
 
-- E-commerce stores
-- Local courier and delivery services
-- Retail order fulfillment
-- Parcel sending and receiving workflows
-- Mobile-first logistics operations
+The Pages screen acts as a central navigation index for the product. It presents available screens in a simple grid so users can move directly to the area they need without working through several layers of navigation.
 
-## Product Vision
+Highlighted page groups include:
 
-The goal of Ships is to make package tracking and shipping feel effortless, especially on mobile devices. By combining fast access, clear status information, and a streamlined sending flow, Ships helps users stay informed and in control at every step.
+- Shop, Products, Product Details, and Product Add
+- Cart, Checkout, Wishlist, and Orders
+- Customers, Customer Details, and Customer Edit
+- Finance, Billing, Discounts, and Invoices
+- Profile, Calendar, Inbox, and Chat
+- Login, Sign up, Forgot Password, and Change Password
+- KYC and related verification steps
+- About Us, Blog, Blog Details, and Contact Us
+- Page not found, Coming Soon, Maintenance, and Scan QR
 
-## Project Philosophy
+## Design Principles
 
-- Simplicity first
-- Mobile-first experience
-- Trust through visibility
-- Speed in package handling
-- Friendly and clean UI
+- **Navigate with ease:** Keep important destinations visible and easy to reach.
+- **Commerce-first:** Organize the experience around shopping, products, orders, customers, and finance.
+- **Mobile-friendly:** Use touch-friendly controls, responsive layouts, and readable content.
+- **Consistent:** Maintain a unified visual language across operational and customer-facing screens.
+- **Approachable:** Combine practical workflows with a bright, modern creative-commerce style.
 
-## Future Direction
+## Technology
 
-The project can grow to include:
+The project is primarily built with:
 
-- Real-time notifications
-- Multi-user dashboards
-- Order history and analytics
-- Shipment filters and search
-- Map-based delivery tracking
-- Integration with logistics and payment systems
+- HTML
+- JavaScript
 
-## Notes
+## Status
 
-This repository is centered around the concept of a modern package tracking and shipping experience designed specifically for mobile users. The focus is on usefulness, clarity, and speed from the moment a package is sent until it reaches its destination.
+GoMobileUX is an evolving creative-commerce experience. New pages, workflows, and integrations can be added as the product grows.
 
 ---
 
-Ships — mobile-first package tracking and sending made simple.
+GoMobileUX — creative commerce made easier to navigate.
