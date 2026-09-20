@@ -1,70 +1,66 @@
-# GoMobileUX
+# alfaships
 
-GoMobileUX is a creative-commerce interface for managing an eShop from a clear, mobile-first workspace. The experience brings storefront pages, products, orders, customers, finance, integrations, and account tools together in one streamlined dashboard.
+alfaships is a simple, modern workspace for running the full shipping journey—from the first product view to the final delivery. It brings shopping, products, orders, customers, finance, and support into one clear experience built for people who want to keep business moving.
 
 ## Overview
 
-The eShop workspace is designed to make commerce operations easy to discover and manage. A dedicated **Pages** view provides quick access to the platform's customer-facing and operational screens, including shopping, checkout, product management, order workflows, billing, customer accounts, and support pages.
+Shipping should feel straightforward. alfaships gives teams an easy way to move between storefront pages and day-to-day operations without getting lost in complicated menus or disconnected tools.
 
-The interface focuses on:
+The experience is designed to help you:
 
-- Fast navigation across the commerce experience
-- Clear separation of storefront and back-office workflows
-- Responsive layouts suitable for mobile and tablet use
-- Consistent, friendly visual design
-- Easy access to frequently used pages and tools
+- Find the right page quickly
+- Keep products, orders, and customers organized
+- Follow each shipment from creation to completion
+- Manage the business from mobile and tablet devices
+- Give customers a clear, dependable experience
 
-## Main Areas
+## What alfaships Covers
 
-### Storefront and Shopping
+### Shop and Shopping
 
-- Shop and product discovery
-- Product details
-- Cart and checkout
-- Wishlist
-- Customer account and profile pages
+- Browse the shop and discover products
+- View detailed product information
+- Add items to the cart and complete checkout
+- Save products to a wishlist
+- Manage customer profiles and accounts
 
 ### Products and Orders
 
-- Product listing and product details
-- Product creation and editing
-- Order creation and completion
-- Order details
-- Shipment and fulfillment workflows
+- View and manage products
+- Add new products and update existing ones
+- Create and complete orders
+- Review order details
+- Support shipment and fulfillment workflows
 
 ### Customers
 
-- Customer directory
-- Customer details
-- Customer editing
-- Login and sign-up flows
-- Password recovery and account settings
+- Browse the customer directory
+- View customer details
+- Edit customer information
+- Support login and sign-up journeys
+- Handle password recovery and account settings
 
 ### Finance and Billing
 
-- Finance dashboard
-- Billing
-- Discounts
-- Invoices
-- Invoice details
-- Subscription payment and upgrade flows
+- Check the finance workspace
+- Manage billing and discounts
+- View invoices and invoice details
+- Support subscription payments and upgrades
 
-### Workspace and Support
+### Team Workspace and Support
 
-- Dashboard
-- Integrations
-- Settings
-- Calendar
-- Inbox and chat
-- Help center
-- Contact us
-- Privacy policy and terms of use
+- Start from the dashboard
+- Connect integrations
+- Manage settings
+- Keep up with calendars, inboxes, and chats
+- Reach the help center or contact support
+- Provide privacy policy and terms of use pages
 
-## Pages Workspace
+## The Pages Workspace
 
-The Pages screen acts as a central navigation index for the product. It presents available screens in a simple grid so users can move directly to the area they need without working through several layers of navigation.
+The Pages workspace keeps the alfaships experience close at hand. It brings important destinations together in one easy-to-scan grid, so teams can jump straight into the work that matters.
 
-Highlighted page groups include:
+Key destinations include:
 
 - Shop, Products, Product Details, and Product Add
 - Cart, Checkout, Wishlist, and Orders
@@ -72,29 +68,29 @@ Highlighted page groups include:
 - Finance, Billing, Discounts, and Invoices
 - Profile, Calendar, Inbox, and Chat
 - Login, Sign up, Forgot Password, and Change Password
-- KYC and related verification steps
+- KYC and verification steps
 - About Us, Blog, Blog Details, and Contact Us
 - Page not found, Coming Soon, Maintenance, and Scan QR
 
-## Design Principles
+## Our Approach
 
-- **Navigate with ease:** Keep important destinations visible and easy to reach.
-- **Commerce-first:** Organize the experience around shopping, products, orders, customers, and finance.
-- **Mobile-friendly:** Use touch-friendly controls, responsive layouts, and readable content.
-- **Consistent:** Maintain a unified visual language across operational and customer-facing screens.
-- **Approachable:** Combine practical workflows with a bright, modern creative-commerce style.
+- **Keep it clear:** Put the next step within easy reach.
+- **Keep business moving:** Make everyday shipping and commerce tasks quick to complete.
+- **Build for real life:** Make the experience work well on phones, tablets, and larger screens.
+- **Stay consistent:** Give every page a familiar feel, from shopping to support.
+- **Put people first:** Make tools useful for teams and experiences dependable for customers.
 
 ## Technology
 
-The project is primarily built with:
+alfaships is built primarily with:
 
 - HTML
 - JavaScript
 
 ## Status
 
-GoMobileUX is an evolving creative-commerce experience. New pages, workflows, and integrations can be added as the product grows.
+alfaships is growing into a complete, connected shipping and commerce experience. More pages, workflows, and integrations will continue to make it easier to move products, orders, and people forward.
 
 ---
 
-GoMobileUX — creative commerce made easier to navigate.
+alfaships — keep business moving.
