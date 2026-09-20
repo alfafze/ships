@@ -1,12 +1,12 @@
 # alfaships
 
-alfaships is a simple, modern workspace for running the full shipping journey—from the first product view to the final delivery. It brings shopping, products, orders, customers, finance, and support into one clear experience built for people who want to keep business moving.
+alfaships is a simple, modern workspace for running the full shipping journey—from the first product view to the final delivery. It brings shopping, products, orders, customers, finance, and support into one clear experience.
 
 ## Overview
 
 Shipping should feel straightforward. alfaships gives teams an easy way to move between storefront pages and day-to-day operations without getting lost in complicated menus or disconnected tools.
 
-The experience is designed to help you:
+The experience is designed to help teams:
 
 - Find the right page quickly
 - Keep products, orders, and customers organized
@@ -14,78 +14,43 @@ The experience is designed to help you:
 - Manage the business from mobile and tablet devices
 - Give customers a clear, dependable experience
 
-## What alfaships Covers
+## Pages workspace
 
-### Shop and Shopping
+Open [`pages.html`](pages.html) for the responsive page directory. It groups the primary alfaships destinations into Operations, Account access, and Customer experience, with direct links to the existing workflows.
+
+The Pages workspace is designed mobile-first:
+
+- Responsive cards collapse to a single-column layout on small screens
+- Fluid typography and spacing adapt to viewport size
+- Touch-friendly links and controls provide comfortable tap targets
+- Skip navigation and semantic landmarks improve keyboard and screen-reader access
+- Reduced-motion preferences are respected
+
+The shared additions live in [`mobile.css`](mobile.css). Existing pages already include the viewport meta tag and responsive styles; new screens can opt into the mobile layer by loading this stylesheet after `styles.css`.
+
+## What alfaships covers
+
+### Shop and shopping
 
 - Browse the shop and discover products
-- View detailed product information
-- Add items to the cart and complete checkout
-- Save products to a wishlist
+- View product information, cart, checkout, and wishlist
 - Manage customer profiles and accounts
 
-### Products and Orders
+### Products, orders, and delivery
 
 - View and manage products
-- Add new products and update existing ones
 - Create and complete orders
-- Review order details
-- Support shipment and fulfillment workflows
+- Review shipment details, tracking, alerts, and delivery proof
 
-### Customers
+### Customers, finance, and support
 
-- Browse the customer directory
-- View customer details
-- Edit customer information
-- Support login and sign-up journeys
-- Handle password recovery and account settings
-
-### Finance and Billing
-
-- Check the finance workspace
-- Manage billing and discounts
-- View invoices and invoice details
-- Support subscription payments and upgrades
-
-### Team Workspace and Support
-
-- Start from the dashboard
-- Connect integrations
-- Manage settings
-- Keep up with calendars, inboxes, and chats
-- Reach the help center or contact support
-- Provide privacy policy and terms of use pages
-
-## The Pages Workspace
-
-The Pages workspace keeps the alfaships experience close at hand. It brings important destinations together in one easy-to-scan grid, so teams can jump straight into the work that matters.
-
-Key destinations include:
-
-- Shop, Products, Product Details, and Product Add
-- Cart, Checkout, Wishlist, and Orders
-- Customers, Customer Details, and Customer Edit
-- Finance, Billing, Discounts, and Invoices
-- Profile, Calendar, Inbox, and Chat
-- Login, Sign up, Forgot Password, and Change Password
-- KYC and verification steps
-- About Us, Blog, Blog Details, and Contact Us
-- Page not found, Coming Soon, Maintenance, and Scan QR
-
-## Our Approach
-
-- **Keep it clear:** Put the next step within easy reach.
-- **Keep business moving:** Make everyday shipping and commerce tasks quick to complete.
-- **Build for real life:** Make the experience work well on phones, tablets, and larger screens.
-- **Stay consistent:** Give every page a familiar feel, from shopping to support.
-- **Put people first:** Make tools useful for teams and experiences dependable for customers.
+- Support login, sign-up, password recovery, and account settings
+- Manage billing, discounts, invoices, and subscription payments
+- Connect integrations, calendars, inboxes, chats, and support
 
 ## Technology
 
-alfaships is built primarily with:
-
-- HTML
-- JavaScript
+alfaships is built primarily with HTML, CSS, and JavaScript.
 
 ## Status
 
