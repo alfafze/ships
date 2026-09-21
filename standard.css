@@ -1,0 +1,41 @@
+/* Shared application standards layered after styles.css on every page. */
+:root {
+  --standard-bg: #f7f8f6;
+  --standard-surface: #ffffff;
+  --standard-text: #14231f;
+  --standard-muted: #687872;
+  --standard-line: #dfe7e2;
+  --standard-brand: #102f26;
+  --standard-accent: #b8ed6f;
+  --standard-radius: 16px;
+  --standard-shadow: 0 12px 32px rgba(20, 35, 31, .08);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--standard-text); background: var(--standard-bg); font-family: "DM Sans", system-ui, sans-serif; }
+button, input { font: inherit; }
+a { color: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid var(--standard-accent); outline-offset: 3px; }
+
+.standard-page { min-height: 100vh; }
+.standard-header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.94); border-bottom: 1px solid var(--standard-line); backdrop-filter: blur(14px); }
+.standard-header__inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; width: min(1120px, calc(100% - 2rem)); min-height: 4.5rem; margin: 0 auto; }
+.standard-brand { text-decoration: none; font-weight: 700; letter-spacing: -.04em; font-size: 1.35rem; }
+.standard-brand span { color: #75ad3d; }
+.standard-header__link { text-decoration: none; color: var(--standard-muted); font-size: .95rem; font-weight: 600; }
+.standard-main { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; padding: clamp(2rem, 6vw, 5rem) 0; }
+.standard-hero { max-width: 700px; margin-bottom: 2rem; }
+.standard-kicker { margin: 0 0 .65rem; color: #6c963d; font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.standard-hero h1 { margin: 0 0 .75rem; font-size: clamp(2rem, 5vw, 3.75rem); line-height: 1; letter-spacing: -.055em; }
+.standard-hero p { margin: 0; color: var(--standard-muted); line-height: 1.65; }
+.standard-card { background: var(--standard-surface); border: 1px solid var(--standard-line); border-radius: var(--standard-radius); box-shadow: var(--standard-shadow); }
+
+@media (max-width: 600px) {
+  .standard-header__inner, .standard-main { width: min(100% - 1.25rem, 1120px); }
+  .standard-header__inner { min-height: 4rem; }
+  .standard-header__link { font-size: .85rem; }
+  .standard-main { padding: 1.75rem 0 3rem; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

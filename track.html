@@ -1,1 +1,48 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Track a Ships package in real time."><title>Track a package — Ships</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><link rel="stylesheet" href="styles.css"></head><body><header class="site-header"><nav class="nav container"><a class="brand" href="index.html"><span class="brand-mark"><i class="fa-solid fa-location-arrow"></i></span>ships<span class="brand-dot">.</span></a><a class="button button-small" href="index.html">Back home</a></nav></header><main class="track-page"><div class="container track-layout"><div class="section-heading reveal is-visible"><p class="eyebrow"><span></span> Shipment intelligence</p><h1>Know exactly<br><em>where it is.</em></h1><p>Enter a tracking number to view the latest shipment milestone. Try <strong>SH-2048-AL</strong>.</p></div><section class="tracking-panel reveal is-visible"><form id="track-page-form"><label for="track-page-number">Tracking number</label><div class="track-input"><input id="track-page-number" required placeholder="SH-2048-AL"><button class="button" type="submit">Track <i class="fa-solid fa-arrow-right"></i></button></div></form><div id="track-page-result" class="track-result" role="status" aria-live="polite"></div><div class="track-timeline"><div class="timeline-item done"><i class="fa-solid fa-check"></i><div><b>Package picked up</b><small>New York · Today, 08:42</small></div></div><div class="timeline-item done"><i class="fa-solid fa-location-dot"></i><div><b>In transit</b><small>Moving to destination</small></div></div><div class="timeline-item"><i class="fa-solid fa-house"></i><div><b>Out for delivery</b><small>Estimated tomorrow</small></div></div></div></section></div></main><script src="script.js"></script><script>document.querySelector('#track-page-form').addEventListener('submit',e=>{e.preventDefault();const n=document.querySelector('#track-page-number').value.trim();document.querySelector('#track-page-result').innerHTML=n?`Shipment <strong>${n}</strong> is <strong>in transit</strong>. Last scanned 12 minutes ago.`:'Enter a tracking number.'})</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Standard shipment tracking for alfaships.">
+  <title>Track a shipment — alfaships</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="standard.css">
+  <link rel="stylesheet" href="mobile.css">
+</head>
+<body class="standard-page">
+  <header class="standard-header">
+    <div class="standard-header__inner">
+      <a class="standard-brand" href="index.html">ships<span>.</span></a>
+      <a class="standard-header__link" href="pages.html">All pages</a>
+    </div>
+  </header>
+  <main class="standard-main">
+    <section class="standard-hero">
+      <p class="standard-kicker">Shipment tracking</p>
+      <h1>Know where every shipment stands.</h1>
+      <p>Enter a tracking number to see the current status, latest scan, and delivery estimate.</p>
+    </section>
+    <section class="tracking-app standard-card" aria-labelledby="tracking-title">
+      <div class="tracking-app__header">
+        <div><p class="standard-kicker">Track a package</p><h2 id="tracking-title">Shipment lookup</h2></div>
+        <span class="tracking-status" id="tracking-status">Ready</span>
+      </div>
+      <form id="standard-track-form" class="tracking-form">
+        <label for="standard-track-number">Tracking number</label>
+        <div class="tracking-form__row"><input id="standard-track-number" name="tracking-number" placeholder="SH-2048-AL" autocomplete="off" required><button type="submit">Track shipment <span aria-hidden="true">→</span></button></div>
+        <small>Try the example tracking number: SH-2048-AL</small>
+      </form>
+      <div id="tracking-result" class="tracking-result" role="status" aria-live="polite" hidden></div>
+      <ol class="tracking-steps" aria-label="Shipment progress">
+        <li class="is-complete"><span>1</span><div><strong>Picked up</strong><small>Shipment accepted by carrier</small></div></li>
+        <li class="is-current"><span>2</span><div><strong>In transit</strong><small>Moving through the delivery network</small></div></li>
+        <li><span>3</span><div><strong>Out for delivery</strong><small>Final delivery is scheduled next</small></div></li>
+      </ol>
+    </section>
+  </main>
+  <script src="track-standard.js"></script>
+</body>
+</html>
