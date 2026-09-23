@@ -20,39 +20,117 @@
 
   <main>
     <section class="hero">
-      <div>
+      <div class="hero-copy">
         <p class="eyebrow">SHIPPED AS YOU REQUIRE</p>
         <h1>Freight made simple.</h1>
         <p class="lede">Reliable ocean freight, chartering, and project cargo solutions for the way your business moves.</p>
-        <div class="actions"><a class="button button-dark" href="#quote">Request a quote</a><a class="button button-light" href="#tracking">Track cargo</a></div>
+
+        <div class="cta-row">
+          <a class="button button-dark" href="#quote">Get a quote</a>
+          <a class="button button-light" href="#tracking">Request estimate</a>
+        </div>
+
+        <div class="mini-stats" aria-label="Key shipping metrics">
+          <div><strong>120+</strong><span>Ports served</span></div>
+          <div><strong>48h</strong><span>Quick response</span></div>
+          <div><strong>24/7</strong><span>Tracking support</span></div>
+        </div>
       </div>
-      <div class="hero-card" aria-label="Shipping highlights"><strong>Global reach</strong><span>Ocean, air, road, and rail freight</span><strong>Personal service</strong><span>One team from port to destination</span></div>
+
+      <div class="hero-side">
+        <div class="tracking-panel" aria-label="Track a shipment">
+          <p class="panel-label">Track shipment</p>
+          <form id="hero-track-form" class="tracking-form">
+            <label class="sr-only" for="hero-track-number">Shipment tracking number</label>
+            <input id="hero-track-number" name="trackingNumber" type="text" placeholder="Enter tracking number" required>
+            <button type="submit" class="button button-dark">Send</button>
+          </form>
+          <p id="hero-track-result" class="form-result" aria-live="polite"></p>
+        </div>
+
+        <div class="info-cards">
+          <button type="button" class="chip" data-value="Ocean freight">Ocean freight</button>
+          <button type="button" class="chip" data-value="Project cargo">Project cargo</button>
+          <button type="button" class="chip" data-value="Air & road">Air & road</button>
+        </div>
+      </div>
     </section>
 
     <section id="services" class="section">
-      <p class="eyebrow">WHAT WE DO</p><h2>One partner for every shipment.</h2>
+      <p class="eyebrow">WHAT WE DO</p>
+      <h2>One partner for every shipment.</h2>
       <div class="cards">
-        <article class="card"><span class="card-number">01</span><h3>Ocean freight</h3><p>Cost-effective container and breakbulk transport with dependable port-to-port planning.</p></article>
-        <article class="card"><span class="card-number">02</span><h3>Project cargo</h3><p>Heavy-lift and oversized cargo managed with careful routing, handling, and documentation.</p></article>
-        <article class="card"><span class="card-number">03</span><h3>Logistics solutions</h3><p>Flexible air, road, and rail options to keep time-critical and complex cargo moving.</p></article>
+        <article class="card">
+          <span class="card-number">01</span>
+          <h3>Ocean freight</h3>
+          <p>Cost-effective container and breakbulk transport with dependable port-to-port planning.</p>
+        </article>
+        <article class="card">
+          <span class="card-number">02</span>
+          <h3>Project cargo</h3>
+          <p>Heavy-lift and oversized cargo managed with careful routing, handling, and documentation.</p>
+        </article>
+        <article class="card">
+          <span class="card-number">03</span>
+          <h3>Logistics solutions</h3>
+          <p>Flexible air, road, and rail options to keep time-critical and complex cargo moving.</p>
+        </article>
       </div>
     </section>
 
     <section id="quote" class="section split-section">
-      <div><p class="eyebrow">START MOVING</p><h2>Tell us where it needs to go.</h2><p>Share the basics and our shipping team will prepare the right solution for your cargo.</p></div>
+      <div>
+        <p class="eyebrow">START MOVING</p>
+        <h2>Tell us where it needs to go.</h2>
+        <p>Share the basics and our shipping team will prepare the right solution for your cargo.</p>
+      </div>
+
       <form class="panel" id="quote-form">
-        <label for="from">From</label><input id="from" name="from" required placeholder="Origin port or city">
-        <label for="to">To</label><input id="to" name="to" required placeholder="Destination port or city">
-        <label for="cargo">Cargo type</label><select id="cargo" name="cargo"><option>Container</option><option>Project cargo</option><option>Breakbulk</option><option>Air freight</option></select>
-        <button class="button button-dark" type="submit">Request a quote</button><p class="form-result" aria-live="polite"></p>
+        <label for="from">From</label>
+        <input id="from" name="from" required placeholder="Origin port or city">
+
+        <label for="to">To</label>
+        <input id="to" name="to" required placeholder="Destination port or city">
+
+        <label for="cargo">Cargo type</label>
+        <select id="cargo" name="cargo">
+          <option>Container</option>
+          <option>Project cargo</option>
+          <option>Breakbulk</option>
+          <option>Air freight</option>
+        </select>
+
+        <button class="button button-dark" type="submit">Request a quote</button>
+        <p class="form-result" aria-live="polite"></p>
       </form>
     </section>
 
-    <section id="tracking" class="tracking-section"><div><p class="eyebrow">SHIPMENT TRACKING</p><h2>Know where your cargo is.</h2></div><form id="tracking-form" class="tracking-form"><label class="sr-only" for="tracking-number">Tracking number</label><input id="tracking-number" required placeholder="Enter tracking number"><button class="button button-dark" type="submit">Track</button><p id="tracking-result" class="form-result" aria-live="polite"></p></form></section>
+    <section id="tracking" class="tracking-section">
+      <div>
+        <p class="eyebrow">SHIPMENT TRACKING</p>
+        <h2>Know where your cargo is.</h2>
+      </div>
 
-    <section id="contact" class="contact section"><p class="eyebrow">LET'S TALK</p><h2>Need a tailored shipping plan?</h2><p>Email <a href="mailto:ships@alfafze.com">ships@alfafze.com</a> and tell us about your next move.</p></section>
+      <form id="tracking-form" class="tracking-form">
+        <label class="sr-only" for="tracking-number">Tracking number</label>
+        <input id="tracking-number" required placeholder="Enter tracking number">
+        <button class="button button-light" type="submit">Track</button>
+        <p id="tracking-result" class="form-result" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="contact" class="contact section">
+      <p class="eyebrow">LET'S TALK</p>
+      <h2>Need a tailored shipping plan?</h2>
+      <p>Email <a href="mailto:ships@alfafze.com">ships@alfafze.com</a> and tell us about your next move.</p>
+    </section>
   </main>
-  <footer><span class="brand"><span>ALFA</span> SHIPS</span><small>© 2026 ALFA 2006 FZE. All rights reserved.</small></footer>
+
+  <footer>
+    <span class="brand"><span>ALFA</span> SHIPS</span>
+    <small>© 2026 ALFA 2006 FZE. All rights reserved.</small>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
